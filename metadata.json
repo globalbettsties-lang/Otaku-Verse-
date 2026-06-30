@@ -1,0 +1,6 @@
+{
+  "name": "Otaku Verse",
+  "description": "Your ultimate space to speak your voice, discuss anime, manga, and manhwa, and participate in interactive live debate and conversation sessions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

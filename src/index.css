@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Press+Start+2P&family=Space+Grotesk:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-retro: "Press Start 2P", "Courier New", monospace;
+  --font-sans: "Roboto", "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", monospace;
+  
+  --color-neon-pink: #3d8c56;     /* Vibrant Leaf/Forest Green */
+  --color-neon-cyan: #dfc19b;     /* Warm Bamboo/Nature Tan */
+  --color-anime-purple: #142217;  /* Mossy Wood Dark Card BG */
+  --color-dark-bg: #0a0e0b;       /* Forest Canopy Black BG */
+  --color-footer-bg: #050806;     /* Deep Wood Shadow Black */
+}
+
+/* Custom nature scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d8c56;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dfc19b;
+}
+
+@keyframes float-leaves {
+  0%, 100% { transform: translateY(0px) rotate(0deg) translateX(0px); }
+  33% { transform: translateY(-6px) rotate(3deg) translateX(3px); }
+  66% { transform: translateY(-12px) rotate(-3deg) translateX(-3px); }
+}
+
+.animate-float {
+  animation: float-leaves 6s ease-in-out infinite;
+}
+
+/* Nature glows */
+.neon-text-glow {
+  text-shadow: 0 0 10px rgba(61, 140, 86, 0.6);
+}
+
+.neon-text-glow-cyan {
+  text-shadow: 0 0 10px rgba(223, 193, 155, 0.5);
+}
+
+/* Organic leaf/moss radial pattern */
+.custom-grid-bg {
+  background-image: 
+    radial-gradient(rgba(61, 140, 86, 0.08) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(223, 193, 155, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px, 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
